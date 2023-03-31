@@ -12,20 +12,32 @@ body{
     padding: 15px;
     margin: 0 auto;
 }
-.wrapper{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
+.wrapper,
+.wr-future{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+
     align-items: center;
     margin: 25px 30px 0 ;
 font-size: 25px;
 }
-.wrap-i{
+.wrap-i,
+.wrap-date{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin: 70px 0 ;
+    align-items: center;
 }
 .input-wr{
     width: 300px;
@@ -37,7 +49,9 @@ font-size: 25px;
     display: flex;
     align-items: center;
 }
-.input{
+.input,
+.input-text,
+.date{
     border: none;
     width: 100%;
     height: 30px;
@@ -47,10 +61,11 @@ font-size: 25px;
 }
 
 .btn,
-.btn-clear{
+.btn-clear,
+.btn-future{
     background-color: dodgerblue;
     border: none;
-    padding: 0 15px;
+    padding: 7px 15px;
     border-radius: 30px;
     color: #fff;
 }
@@ -63,4 +78,12 @@ font-size: 25px;
     background-color: rgba(201, 199, 199, 0.8);
     transition: 0.6s;
     color: #232222;
+}
+.wr-h-i,
+.cc,
+.ccc,
+.wr-h-i2{
+    display: flex;
+    align-items: center;
+
 }
